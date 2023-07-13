@@ -1,0 +1,52 @@
+21 November Discussion
+
+#Steps to Create random/structured Layouts with different parameters (Length / Width and random wall creation)
+#Phase I : Creation of random layout without Pacman and Food Palette.
+1.Go to 1.search > TeamProjectLayouts > cleanLayouts > 
+    structuredPrimMazeGen.py/ randomSparseMazeGen.py
+        Input parameters -h : help
+                         -l : length of maze
+                         -w : width of maze
+    structred Prime Maze : not very random layout
+    random Sparse Maze   : very random layout
+
+    Output Folder: 1.search\TeamProjectLayouts\cleanLayouts
+
+#Phase II: Fill the above clean layouts with random permutations of Pacman and Food Palette, also pre-fixing and separting it with manhattan distance b/n pacman and fp
+After generating lots of working layouts. You can run randomLayoutGen.py -- This will create 30 layouts of varying manhattan distances 
+    
+    Output Folder: 1.search\TeamProjectLayouts\cleanLayouts\randomLayout folder
+
+#Phase III: Execute executeTests.py located in 1.search
+
+    Output Folder: 1.search\TeamProjectData\
+
+#Phase IV: Collect data from this folder and execute T-tests, and store results in a folder [TODO PART]
+    [TODO] In what format/structure should we store the data so we can use it.
+    Output Folder:
+
+
+Thinking:
+    1. Interpretation of the data:
+        So far, we observed the p-test value to come significantly low, ~ e-7 whenever the data is different.
+        Ways to interpret these data:
+        A. On the basis of different Grid Categories S, M, L for different algorithms
+
+Agenda for discussion tomorrow.
+    1.In what format/structure should we store the data so we can use it?
+    2. How to represent data in the report
+    3. Do we want to compare mm0 and mm search too?
+    4. Do we want to show number of nodes expanded for each algorithm? Show for Large maze and state similar for Medium and Small mazes
+
+NOTE:
+MM Search doesn't work well when the maze is sparse - in a highly connected graph, MM doesn't work well. - In Open Layouts MM Search doesn't work well.
+Illustrate that MM Search might not work well in all cases, What cases?
+
+MM has strong tradeoffs, optimization computation [MM has strong point on this side] vs path cost
+
+Talk with TA:
+1. p - value, evaluation with hypothesis null or alternative
+2. 
+
+
+
